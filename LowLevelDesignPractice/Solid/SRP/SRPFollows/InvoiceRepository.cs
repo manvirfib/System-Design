@@ -1,8 +1,13 @@
-class InvoiceRepository
+using Utilities;
+
+namespace SRP
 {
-    public void SaveToDb(Invoice invoice)
+    class InvoiceRepository
     {
-        DB dB = new DB();
-        dB.Save(invoice);
+        public void SaveToDb(Invoice invoice)
+        {
+            DB dB = new DB();
+            dB.Save(invoice);
+        }
     }
 }

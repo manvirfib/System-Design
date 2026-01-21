@@ -1,7 +1,12 @@
-class InvoiceFactory
+using Utilities;
+
+namespace SRP
 {
-    public Invoice CreateInvoice()
+    class InvoiceFactory
     {
-        return new Invoice { Amount = 2000, InvoiceName = "Sample Invoice"};
+        public Invoice CreateInvoice()
+        {
+            return new Invoice { Amount = 2000, InvoiceName = "Sample Invoice"};
+        }
     }
 }
